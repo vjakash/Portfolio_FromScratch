@@ -47,7 +47,7 @@ body {
 
 @keyframes loading-side {
     0% {
-        transform: translateX(200%);
+        transform: translateX(300%);
     }
     100% {
         transform: translateY(0);
@@ -137,7 +137,7 @@ body {
 #downloadid {
     animation: loading-side 500ms ease-in-out 400ms;
     animation-fill-mode: forwards;
-    transform: translateX(200%);
+    transform: translateX(300%);
 }
 
 .advanced {
@@ -333,7 +333,7 @@ body {
     #downloadid {
         animation: loading-side 500ms ease-in-out 400ms;
         animation-fill-mode: forwards;
-        transform: translateX(200%);
+        transform: translateX(300%);
     }
     #about>#about-container>p {
         color: #848496
