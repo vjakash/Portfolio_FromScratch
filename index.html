@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo.png">
+    <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>VJAkash-Portfolio</title>
+</head>
+
+<body>
+    <div id="root">
+        <aside>
+            <figure>
+                <div id="avatar"></div>
+                <figcaption>Vijay Akash</figcaption>
+            </figure>
+            <img src="menu.svg" id="hamburger">
+            <nav class="active" id="navbar">
+                <ul>
+                    <li><a href="#" onclick="changeMain('home')">Home</a></li>
+                    <li><a href="#" onclick="changeMain('about')">About</a></li>
+                    <li><a href="#" onclick="changeMain('skills')">Skills</a></li>
+                    <li><a href="#" onclick="changeMain('project')">Projects</a></li>
+                    <li><a href="#" onclick="changeMain('contact')">Contact</a></li>
+                </ul>
+            </nav>
+            <footer>
+
+            </footer>
+        </aside>
+        <main id="home">
+            <div class="intro">
+                <h1><span id="hey">Hey</span> <br> <span id="iam"> I am <br>Vijay Akash</span></h1>
+                <h3>Full Stack Developer</h3>
+                <a href="mailto:vjbakash@gmail.com"><button type="button" class="button primary-button" ><i class="fa fa-envelope"></i>&nbsp;&nbsp;Mail me</button></a> &nbsp;
+                <button type="button" class="button secondary-button ">Get Resume</button>
+            </div>
+            <div class="vectorArt">
+                <img src="vj1.png" alt="vijay vector art">
+            </div>
+        </main>
+        <main id="about">
+            <div id="about-container">
+                <h2>
+                    <span>Let me</span><br>
+                    <span>introduce</span><br>
+                    <span>myself</span><br>
+                </h2>
+
+                <p class="para">
+                    Mission-driven full stack developer with a passion for building a product that solves problem with thoughtful UI design, creating intuitive, dynamic user experiences powered by strong backend.
+                </p>
+                <p class="para">
+                    My core competency lies in creating applications from its inception.I primarily work in MEAN stack among the full stack technologies.
+                </p>
+                <p class="para">
+                    As a full stack developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world.
+                </p>
+                <p class="para">
+                    Feel free to take a look at my projects
+                </p>
+                <button type="button" class="button" id="downloadid">Download Resume</button>
+        </main>
+        <main id="skills">
+            <h1>Skills</h1>
+            <div id="skills-list">
+                <div class="skill1">
+                    <div class="skillName">
+                        <h3>&#10084; &nbsp;Love for programming - Advanced</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 100%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>JavaScript - Intermediate</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 75%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>TypeScript - Intermediate</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 75%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>Python - Intermediate</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 75%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>C Programming - Intermediate</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 75%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>HTML5 - Advanced</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 100%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>CSS3 - Advanced</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 100%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>MySql - Intermediate</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 75%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>MongoDB - Intermediate</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 75%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>Express.js - Intermediate</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 75%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>Angular - Advanced</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 100%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>Node.js - Intermediate</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 75%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <h3>Bootstrap - Advanced</h3>
+                    </div>
+                    <div id="progressbar" style="background-color: black; border-radius: 13px; padding: 3px;">
+                        <div style="background-color: orange; width: 100%;  height: 20px;border-radius: 10px;"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main id="project" style="text-align: center;">
+            <h1 style="text-align: center;">Project Yet to be Added <br>Visit later to see all the projects </h1>
+        </main>
+        <main id="contact">
+
+            <div class="contactImg">
+                <img src="aboutus1.png" alt="contact">
+            </div>
+            <div class="info">
+                <h1 style="border-bottom: 2px solid black;">Profile</h1>
+                <div class="details">
+                    <span>
+                        <h3><i class="fa fa-user"></i>&nbsp;Name</h3>
+                       <p > Vijay Akash A</p>
+                    </span>
+                    <span class="py-2">
+                        <h3><i class="fa fa-envelope"></i>&nbsp;Email</h3>
+                        <a href="mailto:vjbakash@gmail.com">vjbakash@gmail.com</a>
+                    </span>
+                    <span class="py-2">
+                        <h3><i class="fa fa-mobile"></i>&nbsp;Contact</h3>
+                        <a href="tel:+918870709119">(+91) 88707 09119</a>
+                    </span>
+                    <span>
+                        <h3><i class="fa fa-location-arrow"></i>&nbsp;Location</h3>
+                       <p>Chennai,India</p>
+                    </span>
+                    <span>
+                        <h3><img src="https://img.icons8.com/android/24/000000/linkedin.png" style="transform: scale(0.9);"/>&nbsp;LinkedIn</h3>
+                       <p ><a href="https://www.linkedin.com/in/vjakash/" target="_blank">view profile</a></p>
+                    </span>
+                    <span>
+                        <h3><img src="https://img.icons8.com/material-rounded/24/000000/github.png"/>&nbsp;GitHub</h3>
+                        <a href="https://github.com/vjakash" target="_blank">@vjakash</a>
+                    </span>
+
+                </div>
+            </div>
+        </main>
+        </div>
+        <script src="index.js"></script>
+        <!-- <script type="text/babel">
+        let App = () => { return(
+        <SideBar> </SideBar>) }; let SideBar = () => { return (
+        <div id="sidebar"></div>
+        ); }; ReactDOM.render(
+        < App />, document.getElementById('root'));
+    </script> -->
+</body>
+
+</html>
