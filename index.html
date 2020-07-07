@@ -21,19 +21,12 @@
             <img src="menu.svg" id="hamburger">
             <nav id="navbar">
                 <ul>
-                    <li><a href="#" class="li1" onclick="home()">Home</a></li>
-                    <li><a href="#" class="li2" onclick="about()">About</a></li>
-                    <li><a href="#" class="li3" onclick="skills()">Skills</a></li>
-                    <li><a href="#" class="li4" onclick="project()">Projects</a></li>
-                    <li><a href="#" class="li5" onclick="contact()">Contact</a></li>
-                </ul>
-                <!-- <ul>
                     <li><a href="#" class="li1" onclick="changeMain('home')">Home</a></li>
                     <li><a href="#" class="li2" onclick="changeMain('about')">About</a></li>
                     <li><a href="#" class="li3" onclick="changeMain('skills')">Skills</a></li>
                     <li><a href="#" class="li4" onclick="changeMain('project')">Projects</a></li>
                     <li><a href="#" class="li5" onclick="changeMain('contact')">Contact</a></li>
-                </ul> -->
+                </ul>
                 <div class="social">
                     <!-- <h5 class="text-uppercase">Follow me</h5> -->
                     <a href="https://www.facebook.com/vijay.akash.90/" target="_blank"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
@@ -53,7 +46,7 @@
         <!-- navigation end -->
 
         <!-- Home start -->
-        <main id="home" class="activetopic">
+        <main id="home">
             <div class="intro">
                 <h1><span id="hey">Hey</span> <br> <span id="iam"> I am <br>Vijay Akash</span></h1>
                 <h3>Full Stack Developer</h3>
@@ -67,7 +60,7 @@
         <!-- Home end -->
 
         <!-- About start -->
-        <!-- <main id="about" class="activetopic">
+        <main id="about">
             <div id="about-container">
                 <h2>
                     <span>Let me</span><br>
@@ -89,11 +82,11 @@
                 </p>
                 <button type="button" class="button" id="downloadid">Download Resume</button>
             </div>
-        </main> -->
+        </main>
         <!-- About end -->
 
         <!-- Skills start -->
-        <!-- <main id="skills">
+        <main id="skills">
             <h1>Skills</h1>
             <div id="skills-list">
                 <div class="skill1">
@@ -201,11 +194,12 @@
                     </div>
                 </div>
             </div>
-        </main> -->
+        </main>
         <!-- Skills end  -->
 
         <!-- Project start  -->
-        <!-- <main id="project" class="project">
+        <main id="project" class="project">
+            <!-- <h1 style="text-align: center;">Project Yet to be Added <br>Visit later to see all the projects </h1> -->
             <div class="button-group">
                 <button type="button" class="active" id="btn1" data-filter="*">All</button>
                 <button type="button" data-filter=".fullstack">Full Stack</button>
@@ -266,6 +260,7 @@
                         <a>
                             <div class="container">
                                 <img src="./img/projects/comingsoon.jpg" alt="portfolio-1" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                                <!-- <div class="overlay">open project</div> -->
                             </div>
                         </a>
                     </div>
@@ -412,11 +407,11 @@
                     </div>
                 </div>
             </div>
-        </main> -->
+        </main>
         <!-- project end  -->
 
         <!-- Contact start  -->
-        <!-- <main id="contact">
+        <main id="contact">
 
             <div class="contactImg">
                 <img src="aboutus1.png" id="profileImg" alt="contact">
@@ -451,7 +446,7 @@
 
                 </div>
             </div>
-        </main> -->
+        </main>
         <!-- contact end  -->
     </div>
     <!--  Jquery js file  -->
