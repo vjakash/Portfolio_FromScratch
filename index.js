@@ -27,3 +27,6 @@ function changeMain(topic) {
 document.getElementById("hamburger").addEventListener('click', function(e) {
     document.getElementById('navbar').classList.toggle('active');
 })
+document.getElementsByTagName("main")[0].addEventListener('click', function(e) {
+    document.getElementById('navbar').classList.remove('active');
+})
