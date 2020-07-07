@@ -4,6 +4,13 @@ body {
     outline: 0px !important;
 }
 
+a,
+a:active,
+button,
+button:active {
+    outline: 0px !important;
+}
+
 body {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a00fb+0,e600ff+100 */
     background: #4a00fb;
