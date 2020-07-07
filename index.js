@@ -21,12 +21,14 @@ function changeMain(topic) {
     document.getElementById("root").appendChild(nav[topic]);
     currentTopic = topic;
     document.getElementById('navbar').classList.toggle('active');
+    document.getElementById(currentTopic).addEventListener('click', function(e) {
+        document.getElementById('navbar').classList.remove('active');
+    })
 }
-
+document.getElementById(currentTopic).addEventListener('click', function(e) {
+    document.getElementById('navbar').classList.remove('active');
+})
 
 document.getElementById("hamburger").addEventListener('click', function(e) {
     document.getElementById('navbar').classList.toggle('active');
-})
-document.getElementsByTagName("main")[0].addEventListener('click', function(e) {
-    document.getElementById('navbar').classList.remove('active');
 })
