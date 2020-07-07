@@ -493,7 +493,7 @@ body {
         font-size: 0.8em;
         text-decoration: none;
         color: black;
-        animation: active 400ms ease-in-out 300ms;
+        animation: active 200ms ease-in-out 200ms;
         transform: translateX(-100%);
         animation-fill-mode: forwards;
     }
