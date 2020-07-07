@@ -27,6 +27,155 @@ body {
     background-attachment: fixed;
 }
 
+@keyframes loading {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes loading-top {
+    0% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes loading-side {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes loading-left {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes about-loader {
+    0% {
+        transform: translatey(-100%);
+    }
+    100% {
+        transform: translatey(0);
+    }
+}
+
+@keyframes advanced {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes indermediate {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes contacts-loading {
+    0% {
+        transform: translateY(800%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes profileImg {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(180deg);
+    }
+}
+
+.intro {
+    animation: loading 500ms ease-in-out;
+}
+
+.homebtn1 {
+    animation: loading-side 500ms ease-in-out 500ms;
+    animation-fill-mode: forwards;
+    transform: translateX(200%);
+}
+
+.homebtn2 {
+    animation: loading-left 500ms ease-in-out 500ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-200%);
+}
+
+.vectorArt {
+    animation: loading-top 700ms ease-in-out 100ms;
+    animation-fill-mode: forwards;
+    transform: translateX(100%);
+}
+
+#about-container {
+    animation: about-loader 500ms ease-in-out;
+}
+
+#downloadid {
+    animation: loading-side 500ms ease-in-out 400ms;
+    animation-fill-mode: forwards;
+    transform: translateX(200%);
+}
+
+.advanced {
+    animation: advanced 1500ms ease-in-out;
+}
+
+.indermediate {
+    animation: indermediate 800ms ease-in-out;
+}
+
+#profileImg {
+    animation: profileImg 1300ms ease-in-out;
+    /* transform: translateY(180deg); */
+    animation-fill-mode: forwards;
+}
+
+#profile {
+    animation: loading-side 800ms ease-in-out;
+}
+
+.contact1 {
+    animation: contacts-loading 800ms ease-in-out 100ms;
+    transform: translateY(800%);
+    animation-fill-mode: forwards;
+}
+
+.contact2 {
+    animation: contacts-loading 800ms ease-in-out 300ms;
+    transform: translateY(800%);
+    animation-fill-mode: forwards;
+}
+
+.contact3 {
+    animation: contacts-loading 800ms ease-in-out 500ms;
+    transform: translateY(800%);
+    animation-fill-mode: forwards;
+}
+
 @media screen and (min-width:768px) {
     #hamburger {
         display: none;
@@ -103,38 +252,6 @@ body {
     }
     /*****Aside nav bar end***/
     /*****home start***/
-    @keyframes loading {
-        0% {
-            transform: translateY(100%);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-    @keyframes loading-top {
-        0% {
-            transform: translateY(-200%);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-    @keyframes loading-side {
-        0% {
-            transform: translateX(200%);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-    @keyframes loading-left {
-        0% {
-            transform: translateX(-200%);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
     main {
         margin: 0;
         background: white url('bg.svg') no-repeat bottom right;
@@ -199,14 +316,6 @@ body {
     }
     /*****home end***/
     /*****about start***/
-    @keyframes about-loader {
-        0% {
-            transform: translatey(-100%);
-        }
-        100% {
-            transform: translatey(0);
-        }
-    }
     #about {
         display: grid;
         grid-template-columns: 70%;
@@ -231,22 +340,6 @@ body {
     }
     /*****about end***/
     /*****skills start***/
-    @keyframes advanced {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 100%;
-        }
-    }
-    @keyframes indermediate {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 75%;
-        }
-    }
     .advanced {
         animation: advanced 1500ms ease-in-out;
     }
@@ -286,22 +379,6 @@ body {
     /*****projects start***/
     /*****projects end***/
     /*****contact start***/
-    @keyframes contacts-loading {
-        0% {
-            transform: translateY(800%);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-    @keyframes profileImg {
-        0% {
-            transform: translateY(0);
-        }
-        100% {
-            transform: translateY(180deg);
-        }
-    }
     #profileImg {
         animation: profileImg 1300ms ease-in-out;
         /* transform: translateY(180deg); */
@@ -500,6 +577,7 @@ body {
     #contact>.contactImg>img {
         width: 80%;
         height: 80%;
+        transform: rotateY(180deg);
     }
     #contact>.info {}
     #contact>.info>h1 {
