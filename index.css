@@ -493,7 +493,29 @@ body {
         font-size: 0.8em;
         text-decoration: none;
         color: black;
+    }
+    .li1 {
         animation: active 200ms ease-in-out 200ms;
+        transform: translateX(-100%);
+        animation-fill-mode: forwards;
+    }
+    .li2 {
+        animation: active 200ms ease-in-out 300ms;
+        transform: translateX(-100%);
+        animation-fill-mode: forwards;
+    }
+    .li3 {
+        animation: active 200ms ease-in-out 400ms;
+        transform: translateX(-100%);
+        animation-fill-mode: forwards;
+    }
+    .li4 {
+        animation: active 200ms ease-in-out 500ms;
+        transform: translateX(-100%);
+        animation-fill-mode: forwards;
+    }
+    .li5 {
+        animation: active 200ms ease-in-out 600ms;
         transform: translateX(-100%);
         animation-fill-mode: forwards;
     }
