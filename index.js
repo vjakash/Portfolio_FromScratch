@@ -1,5 +1,5 @@
 let currentTopic = "home";
-let nav = {}
+let nav = {};
 nav = {
     "home": document.getElementById("home"),
     "about": document.getElementById("about"),
@@ -19,18 +19,34 @@ function changeMain(topic) {
     document.getElementById("root").appendChild(nav[topic]);
     currentTopic = topic;
     // document.getElementById('navbar').classList.toggle('inactive');
-    document.getElementById('navbar').classList.toggle('active');
+    document.getElementById('navbar').classList.toggle('active1');
     document.getElementById(currentTopic).addEventListener('click', function(e) {
-        document.getElementById('navbar').classList.remove('active');
+        document.getElementById('navbar').classList.remove('active1');
         // document.getElementById('navbar').classList.add('inactive');
     })
+    if (topic == 'project') {
+        let $btns = $('.project .button-group button');
+        $btns.click(function(e) {
+            console.log($(e.target).attr('data-filter'))
+            $('.project .button-group button').removeClass('active');
+            e.target.classList.add('active');
+
+            let selector = $(e.target).attr('data-filter');
+            $('.project .grid').isotope({
+                filter: selector
+            });
+
+            return false;
+        })
+        $('.project .button-group #btn1').trigger('click');
+    }
 }
 document.getElementById(currentTopic).addEventListener('click', function(e) {
-    document.getElementById('navbar').classList.remove('active');
+    document.getElementById('navbar').classList.remove('active1');
     // document.getElementById('navbar').classList.toggle('inactive');
 })
 
 document.getElementById("hamburger").addEventListener('click', function(e) {
-    document.getElementById('navbar').classList.toggle('active');
+    document.getElementById('navbar').classList.toggle('active1');
     // document.getElementById('navbar').classList.toggle('inactive');
 })

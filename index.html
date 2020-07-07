@@ -5,9 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="logo.png">
-    <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
     <link rel="stylesheet" href="index.css" />
     <title>VJAkash-Portfolio</title>
@@ -15,6 +12,7 @@
 
 <body>
     <div id="root">
+        <!-- Navigation start -->
         <aside>
             <figure>
                 <div id="avatar"></div>
@@ -34,6 +32,9 @@
 
             </footer>
         </aside>
+        <!-- navigation end -->
+
+        <!-- Home start -->
         <main id="home">
             <div class="intro">
                 <h1><span id="hey">Hey</span> <br> <span id="iam"> I am <br>Vijay Akash</span></h1>
@@ -45,6 +46,9 @@
                 <img src="vj1.png" alt="vijay vector art">
             </div>
         </main>
+        <!-- Home end -->
+
+        <!-- About start -->
         <main id="about">
             <div id="about-container">
                 <h2>
@@ -68,6 +72,9 @@
                 <button type="button" class="button" id="downloadid">Download Resume</button>
             </div>
         </main>
+        <!-- About end -->
+
+        <!-- Skills start -->
         <main id="skills">
             <h1>Skills</h1>
             <div id="skills-list">
@@ -177,9 +184,183 @@
                 </div>
             </div>
         </main>
-        <main id="project" style="text-align: center;">
-            <h1 style="text-align: center;">Project Yet to be Added <br>Visit later to see all the projects </h1>
+        <!-- Skills end  -->
+
+        <!-- Project start  -->
+        <main id="project" class="project">
+            <!-- <h1 style="text-align: center;">Project Yet to be Added <br>Visit later to see all the projects </h1> -->
+            <div class="button-group">
+                <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                <button type="button" data-filter=".fullstack">Full Stack</button>
+                <button type="button" data-filter=".frontend">Frontend App</button>
+                <button type="button" data-filter=".npm">Npm Package</button>
+                <button type="button" data-filter=".upcoming">Upcoming</button>
+            </div>
+            <div class="project-list grid">
+                <div class="project-item element-item fullstack">
+                    <div class="img">
+                        <a href="https://drivestack.netlify.app/#/" target="_blank">
+                            <img src="./img/projects/drivestack.png" alt="portfolio-1" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <span class="project-title">Drive stack</span> <br>
+                        <span class="text-secondary ">A demo SPA for providing cloud storage for the users with the help of AWS S3</span>
+                        <p style="font:normal bold 17px/30px var(--roboto);">TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/mongodb.png" /><img src="https://img.icons8.com/color/48/000000/angularjs.png"
+                            /><img src="https://img.icons8.com/color/48/000000/nodejs.png" />&nbsp;<img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item frontend">
+                    <div class="img">
+                        <a href="https://covid19visualizer.netlify.app/#/" target="_blank">
+                            <img src="./img/projects/covid.JPG" alt="portfolio-1" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title ">
+                        <span class="project-title">Covid-19 Visualizer</span> <br>
+                        <span class="text-secondary ">covid-19 cases tracker for india</span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/angularjs.png" /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item fullstack">
+                    <div class="img">
+                        <a href="https://xsurl.netlify.app/#/" target="_blank">
+                            <img src="./img/projects/urlshort.png" alt="portfolio-1" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <span class="project-title">URL Shortener</span> <br>
+                        <span class="text-secondary ">Url shortening single page application</span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/mongodb.png" /><img src="https://img.icons8.com/color/48/000000/angularjs.png"
+                            /><img src="https://img.icons8.com/color/48/000000/nodejs.png" /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item upcoming">
+                    <div class="img">
+                        <a>
+                            <img src="./img/projects/comingsoon.jpg" alt="portfolio-1" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <span class="project-title">Stone Bench</span> <br>
+                        <span class="text-secondary ">Peer-to-Peer video conferencing application using WebRTC</span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/javascript.png" /><img src="https://img.icons8.com/color/48/000000/nodejs.png"
+                            /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item frontend">
+                    <div class="img">
+                        <a href="https://vjakash.github.io/FreskDesk-Hackathon/" target="_blank">
+                            <img src="./img/projects/freshdesk.JPG" alt="project-2" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <span class="project-title">Fresh Desk</span> <br>
+                        <span class="text-secondary ">A Fresh Desk ticket and contact manager[single page app] build with FreshDesk api</span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/typescript.png" /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item npm">
+                    <div class="img">
+                        <a href="https://www.npmjs.com/package/funcwizard" target="_blank">
+                            <img src="./img/projects/funcwizard.JPG" alt="portfolio-1" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title ">
+                        <span class="project-title">funcwizard</span> <br>
+                        <span class="text-secondary ">A npm package with functions that make developing process easier </span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/javascript.png" /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item frontend">
+                    <div class="img">
+                        <a href="https://vjakash.github.io/NewYorkTimes-TopNEWS/" target="_blank">
+                            <img src="./img/projects/nyt.JPG" alt="project-2" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title ">
+                        <span class="project-title">New York Times-TopNews</span> <br>
+                        <span class="text-secondary ">A web App to get the top stories of New York Times based on sections </span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/javascript.png" /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item frontend">
+                    <div class="img">
+                        <a href="https://vjakash.github.io/Mini-Game/" target="_blank">
+                            <img src="./img/projects/minigame.JPG" alt="project-2" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title ">
+                        <span class="project-title">Mini Games</span> <br>
+                        <span class="text-secondary ">A single page application that contains "hangman" and "tic-tac-toe" </span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/javascript.png" /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item frontend">
+                    <div class="img">
+                        <a href="https://vjakash.github.io/Music-Player/" target="_blank">
+                            <img src="./img/projects/musicplayer.png" alt="project-2" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title ">
+                        <span class="project-title">Music Player</span> <br>
+                        <span class="text-secondary ">A Simple Music player which shows songs in different catagories </span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/typescript.png" /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item frontend">
+                    <div class="img">
+                        <a href="https://vjakash.github.io/Timer-Cricket/" target="_blank">
+                            <img src="./img/projects/timercricket.JPG" alt="project-2" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title ">
+                        <span class="project-title">Timer Cricket Game</span> <br>
+                        <span class="text-secondary ">A Simple Cricket Game  in which each team score by hitting given value within 60 secs </span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/typescript.png" /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item frontend">
+                    <div class="img">
+                        <a href="https://vjakash.github.io/Number-to-Word/" target="_blank">
+                            <img src="./img/projects/numbertoword.JPG" alt="project-2" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title ">
+                        <span class="project-title">Number to Word Convertor</span> <br>
+                        <span class="text-secondary ">An application to convert the number into words </span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/javascript.png" /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item frontend">
+                    <div class="img">
+                        <a href="https://vjakash.github.io/Simple-Calculator/" target="_blank">
+                            <img src="./img/projects/calc.JPG" alt="project-2" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title ">
+                        <span class="project-title">Simple Calculator</span> <br>
+                        <span class="text-secondary ">An application to perform basic arithmetics</span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/javascript.png" /></p>
+                    </div>
+                </div>
+                <div class="project-item element-item frontend">
+                    <div class="img">
+                        <a href="https://vjakash.github.io/World-Countries-Temperature/" target="_blank">
+                            <img src="./img/projects/restcontries.JPG" alt="project-2" class="img-fluid" style="border-radius: 5px;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="title ">
+                        <span class="project-title">World-Countries</span> <br>
+                        <span class="text-secondary ">A web that shows details about all countries and their current weather </span>
+                        <p>TECH STACK: <br> <img src="https://img.icons8.com/color/48/000000/html-5.png" /><img src="https://img.icons8.com/color/48/000000/css3.png" /><img src="https://img.icons8.com/color/48/000000/javascript.png" /></p>
+                    </div>
+                </div>
+            </div>
         </main>
+        <!-- project end  -->
+
+        <!-- Contact start  -->
         <main id="contact">
 
             <div class="contactImg">
@@ -216,15 +397,17 @@
                 </div>
             </div>
         </main>
+        <!-- contact end  -->
     </div>
+    <!--  Jquery js file  -->
+    <script src="./js/jquery.3.4.1.js"></script>
+    <!--  isotope js library  -->
+    <script src="./vendor/isotope/isotope.min.js"></script>
+
     <script src="index.js"></script>
-    <!-- <script type="text/babel">
-        let App = () => { return(
-        <SideBar> </SideBar>) }; let SideBar = () => { return (
-        <div id="sidebar"></div>
-        ); }; ReactDOM.render(
-        < App />, document.getElementById('root'));
-    </script> -->
+
+    <script src="./js/main.js"></script>
+
 </body>
 
 </html>

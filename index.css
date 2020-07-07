@@ -27,6 +27,9 @@ body {
     background-attachment: fixed;
 }
 
+
+/************Global Animations****************/
+
 @keyframes loading {
     0% {
         transform: translateY(100%);
@@ -117,6 +120,9 @@ body {
     }
 }
 
+
+/************Global animations*********/
+
 .intro {
     animation: loading 500ms ease-in-out;
 }
@@ -185,7 +191,10 @@ body {
     animation-fill-mode: forwards;
 }
 
-@media screen and (min-width:768px) {
+
+/**********************Media query for laptops start************/
+
+@media screen and (min-width:865px) {
     #hamburger {
         display: none;
     }
@@ -386,6 +395,53 @@ body {
     } */
     /*****skills end***/
     /*****projects start***/
+    #project {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% auto;
+        background: #f9f9fc url('bg.svg') no-repeat bottom right;
+        background-size: 30%;
+        /* background-blend-mode: overlay; */
+        /* color: white; */
+    }
+    #project>.button-group {
+        margin: 0;
+        padding: 1em 0em;
+    }
+    #project>.button-group>button {
+        padding: 1em 2em;
+        background: none;
+        border: none;
+        font-size: 1em;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    #project>.project-list {
+        padding-bottom: 1.5em;
+        display: grid !important;
+        grid-template-columns: 23% 23% 23% 23% !important;
+        grid-template-rows: 25% 25% 25% 25%;
+        justify-content: space-around;
+    }
+    .project-list>.project-item {
+        margin: 0;
+        margin-left: 1em;
+        padding: 0;
+        width: 23%;
+    }
+    .project-list>.project-item>.title>.text-secondary {}
+    .project-list>.project-item>.title>.project-title {
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .project-list>.project-item>.title>p>img {
+        width: 30px;
+        height: 30px;
+    }
+    .project-list>.project-item>.img>a>.img-fluid {
+        width: 70%;
+        height: 50%;
+    }
     /*****projects end***/
     /*****contact start***/
     #profileImg {
@@ -433,7 +489,13 @@ body {
     /*****contact end***/
 }
 
-@media screen and (max-width:768px) {
+
+/**********************Media query for laptops end************/
+
+
+/**********************Media query for mobile start************/
+
+@media screen and (max-width:865px) {
     main {
         overflow: hidden;
     }
@@ -477,7 +539,7 @@ body {
             width: 0%;
         }
     }
-    .active {
+    .active1 {
         display: block;
         background-color: #fff;
         position: absolute;
@@ -617,6 +679,51 @@ body {
         height: 10px !important;
     }
     /*****skills end***/
+    /******Project start******/
+    #project {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% auto;
+        background: #f9f9fc url('bg.svg') no-repeat bottom right;
+        background-size: 30%;
+        /* background-blend-mode: overlay; */
+        /* color: white; */
+    }
+    #project>.button-group {
+        padding: 1em 0em;
+    }
+    #project>.button-group>button {
+        padding: 1em 0.5em;
+        background: none;
+        border: none;
+        font-size: 0.8em;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    #project>.project-list {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+    .project-list>.project-item {
+        margin: 0;
+        margin-left: 1em;
+        padding: 0;
+        width: 95%;
+    }
+    .project-list>.project-item>.title>.text-secondary {}
+    .project-list>.project-item>.title>.project-title {
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .project-list>.project-item>.title>p>img {
+        width: 30px;
+        height: 30px;
+    }
+    .project-list>.project-item>.img>a>.img-fluid {
+        width: 70%;
+        height: 50%;
+    }
+    /*******project end*******/
     /*****contact start*****/
     #contact {
         display: grid;
@@ -644,3 +751,6 @@ body {
     }
     /*****contact end*****/
 }
+
+
+/**********************Media query for mobile start************/
