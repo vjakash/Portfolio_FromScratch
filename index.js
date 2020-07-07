@@ -38,7 +38,9 @@ function changeMain(topic) {
 
             return false;
         })
+        $('.project .button-group #btn2').trigger('click');
         $('.project .button-group #btn1').trigger('click');
+        setTimeout(() => {}, 800);
     }
 }
 document.getElementById(currentTopic).addEventListener('click', function(e) {
