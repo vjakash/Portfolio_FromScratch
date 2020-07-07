@@ -452,6 +452,22 @@ body {
     nav {
         display: none;
     }
+    @keyframes active {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    @keyframes inactive {
+        0% {
+            width: 50%;
+        }
+        100% {
+            width: 0%;
+        }
+    }
     .active {
         display: block;
         background-color: #fff;
@@ -461,6 +477,7 @@ body {
         height: 100vh;
         width: 50%;
         z-index: 5;
+        animation: active 400ms ease-in-out;
     }
     ul {
         list-style-type: none;
@@ -476,7 +493,9 @@ body {
         font-size: 0.8em;
         text-decoration: none;
         color: black;
-        transition: text-decoration 0.6s ease;
+        animation: active 400ms ease-in-out 300ms;
+        transform: translateX(-100%);
+        animation-fill-mode: forwards;
     }
     main {
         background-color: #fff;
