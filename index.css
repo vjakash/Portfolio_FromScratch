@@ -42,7 +42,7 @@ body {
         width: 100%;
         height: 100%;
         margin: 0;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
     /*****Aside nav bar start***/
     aside {
@@ -103,6 +103,38 @@ body {
     }
     /*****Aside nav bar end***/
     /*****home start***/
+    @keyframes loading {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes loading-top {
+        0% {
+            transform: translateY(-200%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes loading-side {
+        0% {
+            transform: translateX(200%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes loading-left {
+        0% {
+            transform: translateX(-200%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
     main {
         margin: 0;
         background: white url('bg.svg') no-repeat bottom right;
@@ -116,6 +148,7 @@ body {
         text-align: left;
         justify-self: center;
         text-align: center;
+        animation: loading 500ms ease-in-out;
     }
     .intro>h1>#hey {
         font-weight: lighter;
@@ -124,6 +157,16 @@ body {
     .intro>h1>#iam {
         font-weight: bold;
         font-size: 2em;
+    }
+    .homebtn1 {
+        animation: loading-side 500ms ease-in-out 500ms;
+        animation-fill-mode: forwards;
+        transform: translateX(200%);
+    }
+    .homebtn2 {
+        animation: loading-left 500ms ease-in-out 500ms;
+        animation-fill-mode: forwards;
+        transform: translateX(-200%);
     }
     .button {
         padding: .8rem 2.2rem;
@@ -141,22 +184,36 @@ body {
         box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
         color: whitesmoke;
     }
-    /*****home end***/
     .intro>h3 {
         text-align: center;
     }
     .vectorArt {
         padding: 3em 3em;
+        animation: loading-top 700ms ease-in-out 100ms;
+        animation-fill-mode: forwards;
+        transform: translateX(100%);
     }
     .vectorArt>img {
         height: 90%;
         width: 90%;
     }
+    /*****home end***/
     /*****about start***/
+    @keyframes about-loader {
+        0% {
+            transform: translatey(-100%);
+        }
+        100% {
+            transform: translatey(0);
+        }
+    }
     #about {
         display: grid;
         grid-template-columns: 70%;
         justify-content: center;
+    }
+    #about-container {
+        animation: about-loader 500ms ease-in-out;
     }
     #about>#about-container>h2 {
         padding-top: 1em;
@@ -164,11 +221,38 @@ body {
         font: normal bold 49px/ 60px;
         letter-spacing: 15px;
     }
+    #downloadid {
+        animation: loading-side 500ms ease-in-out 400ms;
+        animation-fill-mode: forwards;
+        transform: translateX(200%);
+    }
     #about>#about-container>p {
         color: #848496
     }
     /*****about end***/
     /*****skills start***/
+    @keyframes advanced {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @keyframes indermediate {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 75%;
+        }
+    }
+    .advanced {
+        animation: advanced 1500ms ease-in-out;
+    }
+    .indermediate {
+        animation: indermediate 800ms ease-in-out;
+    }
     #skills {
         margin: 0;
         padding: 0;
@@ -202,6 +286,45 @@ body {
     /*****projects start***/
     /*****projects end***/
     /*****contact start***/
+    @keyframes contacts-loading {
+        0% {
+            transform: translateY(800%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes profileImg {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(180deg);
+        }
+    }
+    #profileImg {
+        animation: profileImg 1300ms ease-in-out;
+        /* transform: translateY(180deg); */
+        animation-fill-mode: forwards;
+    }
+    #profile {
+        animation: loading-side 800ms ease-in-out;
+    }
+    .contact1 {
+        animation: contacts-loading 800ms ease-in-out 100ms;
+        transform: translateY(800%);
+        animation-fill-mode: forwards;
+    }
+    .contact2 {
+        animation: contacts-loading 800ms ease-in-out 300ms;
+        transform: translateY(800%);
+        animation-fill-mode: forwards;
+    }
+    .contact3 {
+        animation: contacts-loading 800ms ease-in-out 500ms;
+        transform: translateY(800%);
+        animation-fill-mode: forwards;
+    }
     #contact {
         display: grid;
         grid-template-columns: 40% 60%;
