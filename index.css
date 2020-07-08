@@ -721,14 +721,15 @@ body {
     #project {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 3% auto;
+        grid-template-rows: 50vw auto;
         background: #f9f9fc url('bg.svg') no-repeat bottom right;
         background-size: 30%;
         /* background-blend-mode: overlay; */
         /* color: white; */
     }
     #project>.button-group {
-        padding: 0em 0em;
+        padding: 2em 0em;
+        margin-bottom: 2em;
     }
     #project>.button-group>button {
         padding: 1em 0.5em;
@@ -740,7 +741,7 @@ body {
         text-transform: uppercase;
     }
     #project>.project-list {
-        padding-top: 0em;
+        padding-top: 1.5em;
         padding-bottom: 1.5em;
     }
     .project-list>.project-item {
@@ -748,6 +749,8 @@ body {
         margin-left: 1em;
         padding: 0;
         width: 95%;
+        /* top: 20% !important; */
+        /* position: relative !important; */
     }
     .project-list>.project-item>.title>.text-secondary {}
     .project-list>.project-item>.title>.project-title {
