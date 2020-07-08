@@ -721,14 +721,14 @@ body {
     #project {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10% auto;
+        grid-template-rows: 3% auto;
         background: #f9f9fc url('bg.svg') no-repeat bottom right;
         background-size: 30%;
         /* background-blend-mode: overlay; */
         /* color: white; */
     }
     #project>.button-group {
-        padding: 1em 0em;
+        padding: 0em 0em;
     }
     #project>.button-group>button {
         padding: 1em 0.5em;
@@ -740,7 +740,7 @@ body {
         text-transform: uppercase;
     }
     #project>.project-list {
-        padding-top: 1.5em;
+        padding-top: 0em;
         padding-bottom: 1.5em;
     }
     .project-list>.project-item {
