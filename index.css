@@ -517,6 +517,12 @@ body {
         margin-top: 2em;
         text-align: center;
     }
+    footer>.social>a {
+        color: #3f5d9a;
+    }
+    footer>.social>a:hover {
+        color: #bf00fe;
+    }
     /* End Footer */
 }
 
@@ -587,6 +593,9 @@ body {
         animation: active 200ms ease-in-out 700ms;
         transform: translateX(-100%);
         animation-fill-mode: forwards;
+    }
+    .active1>.social>a {
+        color: #3f5d9a
     }
     ul {
         list-style-type: none;
