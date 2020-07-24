@@ -4,6 +4,10 @@ body {
     outline: 0px !important;
 }
 
+.active {
+    color: #4a00fb;
+}
+
 a,
 a:active,
 button,
