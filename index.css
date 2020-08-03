@@ -471,6 +471,100 @@ body {
     .container:hover .overlay {
         opacity: 1;
     }
+    /*******new project css***********/
+    .project-list {
+        padding: 5px 10px 5px 10px;
+        /* display: grid; */
+        /* grid-template-columns: 10% 10% 10%; */
+    }
+    .projectitem {
+        height: 450px;
+        width: 350px;
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-rows: 40% 60%;
+        border-radius: 5px;
+        background-color: #DCE1F6;
+        margin: 3px;
+    }
+    /* .projectitem:hover {
+        transform: scale(1.1);
+        z-index: 5;
+    } */
+    .image {
+        padding: 15px;
+    }
+    .img-fluid {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .details {
+        padding: 0 15px;
+    }
+    .project-title {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .text-secondary {
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+    .tech-stack {
+        font-weight: bold;
+    }
+    .buttongroup {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        /* justify-content: center; */
+    }
+    .viewproject {
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+    }
+    .view-project-btn {
+        padding: 8px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    .fullstack>.details>.buttongroup>.githublink {
+        display: grid;
+        grid-template-columns: 5% 40% 40% 5%;
+        justify-content: space-between;
+        padding: 10px 0 10px 0;
+    }
+    .frontend>.details>.buttongroup>.githublink,
+    .npm>.details>.buttongroup>.githublink {
+        display: grid;
+        grid-template-columns: 10% 70% 10%;
+        justify-content: space-between;
+        padding: 10px 0 10px 0;
+    }
+    .github-button {
+        padding: 8px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        background: #3E3D46;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    .upcoming {
+        height: 450px;
+        width: 380px;
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-rows: 65% 35%;
+        border-radius: 5px;
+        background-color: #DCE1F6;
+        margin: 3px;
+    }
     /*****projects end***/
     /*****contact start***/
     #profileImg {
@@ -780,6 +874,102 @@ body {
     .project-list>.project-item>.img>a>.container>.img-fluid {
         width: 70%;
         height: 50%;
+    }
+    /******new project css********/
+    .project-list {
+        padding: 2px;
+        /* display: grid; */
+        /* grid-template-columns: 10% 10% 10%; */
+    }
+    .projectitem {
+        height: 550px;
+        width: 97%;
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-rows: 40% 60%;
+        border-radius: 5px;
+        background-color: #DCE1F6;
+        margin: 3px;
+    }
+    /* .projectitem:hover {
+        transform: scale(1.1);
+        z-index: 5;
+    } */
+    .image {
+        padding: 15px;
+    }
+    .img-fluid {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .details {
+        padding: 0 15px;
+    }
+    .project-title {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .text-secondary {
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+    .tech-stack {
+        font-weight: bold;
+    }
+    .buttongroup {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        /* justify-content: center; */
+    }
+    .viewproject {
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+    }
+    .view-project-btn {
+        padding: 8px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    .fullstack>.details>.buttongroup>.githublink {
+        display: grid;
+        grid-template-columns: 5% 40% 40% 5%;
+        justify-content: space-between;
+        padding: 10px 0 10px 0;
+    }
+    .frontend>.details>.buttongroup>.githublink,
+    .npm>.details>.buttongroup>.githublink {
+        display: grid;
+        grid-template-columns: 10% 70% 10%;
+        justify-content: space-between;
+        padding: 10px 0 10px 0;
+    }
+    .github-button {
+        padding: 8px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        background: #3E3D46;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    .upcoming {
+        height: 450px;
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-rows: 65% 35%;
+        border-radius: 5px;
+        background-color: #DCE1F6;
+        /* margin: 3px; */
+    }
+    .frontend {
+        height: 480px;
     }
     /*******project end*******/
     /*****contact start*****/
