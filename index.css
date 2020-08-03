@@ -8,10 +8,16 @@ body {
     color: #4a00fb;
 }
 
+#root {
+    border-radius: 8px;
+}
+
 a,
 a:active,
+a:focus,
 button,
-button:active {
+button:active,
+button:focus {
     outline: 0px !important;
 }
 
@@ -318,13 +324,11 @@ body {
         cursor: pointer;
         color: whitesmoke;
         box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-        transition: background 1s ease;
+        /* transition: background 1s ease; */
         background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
     }
     .button:hover {
         background: linear-gradient(90deg, #854fee 0%, #4458dc 100%);
-        box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-        color: whitesmoke;
     }
     .intro>h3 {
         text-align: center;
@@ -532,6 +536,9 @@ body {
         font-size: 1em;
         cursor: pointer;
     }
+    .view-project-btn:hover {
+        transform: scale(1.1);
+    }
     .fullstack>.details>.buttongroup>.githublink {
         display: grid;
         grid-template-columns: 5% 40% 40% 5%;
@@ -554,6 +561,9 @@ body {
         color: white;
         font-size: 1em;
         cursor: pointer;
+    }
+    .github-button:hover {
+        transform: scale(1.1);
     }
     .upcoming {
         height: 450px;
